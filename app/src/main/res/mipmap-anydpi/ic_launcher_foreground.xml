@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- 주사위 테두리 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M35,35h38v38h-38z" />
+    
+    <!-- 주사위 점들 (5번) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M45,45a4,4 0 1,1 0.001,0" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M63,45a4,4 0 1,1 0.001,0" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M54,54a4,4 0 1,1 0.001,0" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M45,63a4,4 0 1,1 0.001,0" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M63,63a4,4 0 1,1 0.001,0" />
+    
+    <!-- 스톱워치 외곽선 -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,54m-40,0a40,40 0 1,1 80,0a40,40 0 1,1 -80,0" />
+    
+    <!-- 시계 바늘 -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,54L54,30" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,54L70,54" />
+</vector> 
