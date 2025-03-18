@@ -14,8 +14,24 @@
 
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+-keepattributes SourceFile,LineNumberTable
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# 기본 규칙
+-keepattributes SourceFile,LineNumberTable
+-keepattributes *Annotation*
+
+# Compose 관련 규칙
+-keep class androidx.compose.** { *; }
+-keepclassmembers class androidx.compose.** { *; }
+
+# 앱의 주요 클래스 보존
+-keep class com.googsu.boardgame.MainActivity { *; }
+-keep class com.googsu.boardgame.ui.theme.** { *; }
+
+# 벡터 드로어블 보존
+-keep class * extends android.graphics.drawable.Drawable { *; }
+-keep class * extends android.graphics.drawable.VectorDrawable { *; }
